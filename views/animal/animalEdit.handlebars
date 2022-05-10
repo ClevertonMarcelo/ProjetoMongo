@@ -1,0 +1,11 @@
+<form action="/animalEdit" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="id" value="{{animais._id}}">
+    <p>Nome:</p> <input type="text" name="nome" value="{{animais.nome}}">
+    <p>Nome Do Proprietario:</p> <input type="text" name="nomeDoProprietario" value="{{animais.nomeDoProprietario}}">
+    <p>Endereco:</p><input type="text" name="endereco" value=" {{animais.endereco}}">
+    <p>Tipo:</p> <input type="text" name="tipo" value=" {{animais.tipo}}">
+    <p>Raça:</p> <input type="text" name="raca" value=" {{animais.raca}}">
+    <p>Imagem:</p><input type="file" name="imagem">
+    <br><br>
+    <input type="submit" value="Editar">
+</form>

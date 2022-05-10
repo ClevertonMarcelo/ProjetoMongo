@@ -1,0 +1,19 @@
+<div class="div-login">
+    <div class="tela_login">
+
+        <form action="/login" method="post">
+            <h1>Login</h1>
+            <input class="form-control" type="text" name="login" id="login" placeholder="Usuário">
+            <br>
+            <input class="form-control" type="password" name="senha" placeholder="Senha">
+            <br>
+            <input class="btn btn-primary" type="submit" value="Logar">
+        </form>
+        <br>
+        <script> function recuperarSenha() { window.location.href = "recuperarSenha/" + document.getElementById("login").value }</script>
+        <button onclick=recuperarSenha() class="btn btn-primary"> Recupear Senha </button>
+
+    </div>
+
+
+</div>

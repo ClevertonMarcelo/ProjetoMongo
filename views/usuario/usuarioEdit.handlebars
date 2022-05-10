@@ -1,0 +1,12 @@
+<form action="/usuarioEdit" method="POST" enctype="multipart/form-data"> ​
+    <input type="hidden" name="id" value="{{usuarios._id}}">
+    <p>Login:</p> <input type="text" class="form-control" name="login" value="{{usuarios.login}}">
+    <p>Senha:</p> <input type="text" class="form-control" name="senha" value="{{usuarios.senha}}">
+    <p>Pergunta Secreta:</p> <input type="text" class="form-control" name="pergunta_secreta"
+        value="{{usuarios.pergunta_secreta}}">
+    <p>Resposta:</p> <input type="text" class="form-control" name="resposta_pergunta"
+        value="{{usuarios.resposta_pergunta}}">
+    <br><br>
+
+    <input type="submit" value="Editar">
+</form>
