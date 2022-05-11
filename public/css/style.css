@@ -11,10 +11,10 @@ body {
 .tela_login {
     background-color: rgba(0, 0, 0, 0.877);
     position: absolute;
-    top: 55%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-block: 24px;
+    padding-block: 54px;
     padding-inline: 85px;
     border-radius: 15px;
     color: white;
@@ -119,4 +119,13 @@ body {
     margin-left: 150px;
     margin-right: 150px;
     background-color: rgba(172, 201, 202, 0.747);
+}
+
+@media screen and(max-width: 600px) {
+
+    body {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
 }
