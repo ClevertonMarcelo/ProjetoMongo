@@ -1,17 +1,17 @@
 <div class="div-login">
-    <div class="tela_login">
+    <div class="tela_login" id="div2">
 
         <form action="/login" method="post">
             <h1>Login</h1>
-            <input class="form-control" type="text" name="login" id="login" id="div1" placeholder="Usuário">
+            <input class="form-control" type="text" name="login" id="login" placeholder="Usuário">
             <br>
-            <input class="form-control" type="password" name="senha" id="div1" placeholder="Senha">
+            <input class="form-control" type="password" name="senha" placeholder="Senha">
             <br>
-            <input class="btn btn-primary" type="submit" value="Logar" id="div1">
+            <input class="btn btn-primary" type="submit" value="Logar">
         </form>
         <br>
         <script> function recuperarSenha() { window.location.href = "recuperarSenha/" + document.getElementById("login").value }</script>
-        <button onclick=recuperarSenha() class="btn btn-primary" id="div1"> Recupear Senha </button>
+        <button onclick=recuperarSenha() class="btn btn-primary"> Recupear Senha </button>
 
     </div>
 
