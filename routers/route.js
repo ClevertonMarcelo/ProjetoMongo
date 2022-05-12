@@ -1,6 +1,7 @@
 const express = require('express');
 const controllerUsuario = require('../controllers/controllerUsuario');
 const controllerAnimal = require('../controllers/controllerAnimal');
+const controllerAPI = require('../controllers/controllerAPI');
 const route = express.Router();
 const multer = require('multer');
 const storage = multer.diskStorage({
@@ -13,6 +14,7 @@ const storage = multer.diskStorage({
     },
 })
 const upload = multer({ storage });
+
 
 module.exports = route;
 
@@ -41,8 +43,13 @@ route.get("/logout", controllerUsuario.getLogout);
 route.get("/animalEdit/:id", controllerAnimal.getEdit);
 route.post("/animalEdit", upload.single('imagem'), controllerAnimal.postEdit);
 route.get("/animalDelete/:id", controllerAnimal.getDelete);
-
 route.get("/usuarioEdit/:id", controllerUsuario.getEdit);
 route.post("/usuarioEdit", controllerUsuario.postEdit);
 route.get("/usuarioDelete/:id", controllerUsuario.getDelete);
 
+//API-Animal
+route.get("/api/animal/:id", controllerAPI.getAnimalById);
+route.get("/api/animal", controllerAPI.getAnimal);
+route.post("/api/animal", controllerAPI.postAnimal);
+route.put('/api/animal/:id', controllerAPI.putAnimal);
+route.delete('/api/animal/:id', controllerAPI.deleteAnimal);
