@@ -7,27 +7,43 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        @media screen and (min-width:100px) and (max-width:600px) {
+            #div1 {
+                width: 100%;
+                background-color: red;
+            }
+        }
+
+        @media screen and (min-width:601px) and (max-width:1200px) {
+            #div1 {
+                width: 30%;
+                background-color: blue;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <a href="usuarioCreate"> <button> Cadastrar Usuário</button> </a> ​
-            <a href="usuarioList"> <button> Listar Usuários</button> </a>​
-            <a href="animalCreate"> <button> Cadastrar Animal</button> </a> ​
-            <a href="animalList"> <button> Listar Animal</button> </a>
-            <a href="logout"> <button> Logout</button> </a>
+        <a href="usuarioCreate"> <button href="usuarioCreate" class="btn btn-primary" id="div1"> Cadastrar
+                Usuário</button> </a> ​
+        <a href="usuarioList"> <button class="btn btn-primary" id="div1"> Listar Usuários</button> </a>​
+        <a href="animalCreate"> <button class="btn btn-primary" id="div1"> Cadastrar Animal</button> </a> ​
+        <a href="animalList"> <button class="btn btn-primary" id="div1"> Listar Animal</button> </a>
+        <a href="logout"> <button class="btn btn-primary" id="div1"> Logout</button> </a>
 
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
-            </div>
-            {{{body}}}
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-                crossorigin="anonymous"></script>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
         </div>
+        {{{body}}}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
     </div>
 
 </body>
