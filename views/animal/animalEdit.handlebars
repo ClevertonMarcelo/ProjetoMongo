@@ -1,11 +1,16 @@
 <form action="/animalEdit" method="POST" enctype="multipart/form-data">
-    <input type="hidden" name="id" value="{{animais._id}}">
-    <p>Nome:</p> <input type="text" name="nome" value="{{animais.nome}}">
-    <p>Nome Do Proprietario:</p> <input type="text" name="nomeDoProprietario" value="{{animais.nomeDoProprietario}}">
-    <p>Endereco:</p><input type="text" name="endereco" value=" {{animais.endereco}}">
-    <p>Tipo:</p> <input type="text" name="tipo" value=" {{animais.tipo}}">
-    <p>Raça:</p> <input type="text" name="raca" value=" {{animais.raca}}">
-    <p>Imagem:</p><input type="file" name="imagem">
-    <br><br>
-    <input type="submit" value="Editar">
+    <div class="div-login">
+        <div class="tela_login">
+            <input type="hidden" name="id" value="{{animais._id}}" id="div1">
+            <p>Nome:</p> <input type="text" name="nome" value="{{animais.nome}}" id="div1">
+            <p>Nome Do Proprietario:</p> <input type="text" name="nomeDoProprietario"
+                value="{{animais.nomeDoProprietario}}" id="div1">
+            <p>Endereco:</p><input type="text" name="endereco" value=" {{animais.endereco}}" id="div1">
+            <p>Tipo:</p> <input type="text" name="tipo" value=" {{animais.tipo}}" id="div1">
+            <p>Raça:</p> <input type="text" name="raca" value=" {{animais.raca}}" id="div1">
+            <p>Imagem:</p><input type="file" name="imagem" id="div1">
+            <br><br>
+            <input type="submit" value="Editar" id="div1">
+        </div>
+    </div>
 </form>

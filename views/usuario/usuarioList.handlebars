@@ -2,7 +2,7 @@
 
     <table class="table table-striped table-hover">
         <thead>
-            <tr>
+            <tr id="div1">
                 <th scope="col">Login</th>
                 <th scope="col">Senha</th>
                 <th scope="col">Pergunta Secreta</th>
@@ -13,13 +13,13 @@
         </thead>
         <tbody>
             {{#each usuarios}}
-            <tr>
-                <th scope="row">{{login}}</th>
+            <tr id="div1">
+                <th scope="row" id="div1">{{login}}</th>
                 <td>{{senha}}</td>
                 <td>{{pergunta_secreta}}</td>
                 <td>{{resposta_pergunta}}</td>
-                <td><a href="usuarioEdit/{{_id}}" class="btn btn-primary"> Editar </a></td>
-                <td><a href="usuarioDelete/{{_id}}" class="btn btn-danger"> Deletar </a></td>
+                <td><a href="usuarioEdit/{{_id}}" class="btn btn-primary" id="div1"> Editar </a></td>
+                <td><a href="usuarioDelete/{{_id}}" class="btn btn-danger" id="div1"> Deletar </a></td>
             </tr>
             {{/each}}
         </tbody>

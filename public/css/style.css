@@ -129,3 +129,28 @@ body {
         width: 100%;
     }
 }
+
+@media screen and (min-width:100px) and (max-width:600px) {
+    #div1 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:1200px) {
+    #div1 {
+        width: 30%;
+    }
+}
+
+
+@media screen and (min-width:100px) and (max-width:600px) {
+    #div2 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:1200px) {
+    #div2 {
+        width: 30%;
+    }
+}
