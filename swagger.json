@@ -4,7 +4,7 @@
         "title": "API-Animal",
         "description": "Essa API fornece recursos para persistência de animal em um banco de dados",
         "contact": {
-            "email": "ortoncelli@utfpr.edu.br"
+            "email": "clevertonmarcelo6.com.br"
         },
         "version": "1.0.0"
     },
@@ -32,8 +32,11 @@
                                 "animal": {
                                     "value": {
                                         "nome": "Gelo",
-                                        "ingredientes": "Água",
-                                        "preparo": "Congelar"
+                                        "nomeDoProprietario": "Água",
+                                        "endereco": "Congelar",
+                                        "tipo": "Congelar",
+                                        "raca": "Congelar",
+                                        "imagem": "Congelar"
                                     }
                                 }
                             }
@@ -94,11 +97,20 @@
                     "nome": {
                         "type": "string"
                     },
-                    "ingredientes": {
+                    "nomeDoProprietario": {
                         "type": "string"
                     },
-                    "preparo": {
+                    "endereco": {
                         "type": "string"
+                    },
+                    "tipo": {
+                        "type": "string"
+                    },
+                    "raca": {
+                        "type": "string"
+                    },
+                    "imagem": {
+                        "type": "file"
                     }
                 }
             }
