@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table,
+        th,
+        tr,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Node e Ajax</h1>
+    <button id="btnListar"> Listar Animais</button>
+
+    <form id="formAnimal">
+        <input type="text" id="nomeAnimal" placeholder="Nome">
+        <input type="text" id="nomeDoProprietario" placeholder="Nome Do Proprietario">
+        <input type="text" id="endereco" placeholder="Endereco">
+        <input type="text" id="tipo" placeholder="Tipo">
+        <input type="text" id="raca" placeholder="Raca">
+        <input type="file" id="imagem">
+        <button type="submit"> Criar</button>
+    </form>
+
+    <table>
+        <thead border: 1px solid black;>
+            <tr>
+                <th> <b> Nome</b> </th>
+                <th> <b> Nome Do Proprietario</b></th>
+                <th> <b> Endereco</b> </th>
+                <th> <b> Tipo</b> </th>
+                <th> <b> Raca</b> </th>
+                <th> <b> imagem</b> </th>
+            </tr>
+        </thead>
+        <tbody> </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
